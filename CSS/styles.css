@@ -32,7 +32,7 @@ header {
     padding-bottom: 15px;
     padding-top: 15px;
     padding-left: 3px;
-    width: 52rem;
+    width: 42rem;
     text-align: center;
     align-items: center;
     margin: auto;
@@ -54,6 +54,90 @@ header a {
 main {
     margin-top: 10rem;
     text-align: center;
-    font-size: 45px;
     color: var(--blue-text);
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+main h1 {
+    text-align: center;
+    display: inline-block;
+    font-size: 13vh;
+
+}
+
+
+
+/* Word carosel */
+#text-carousel {
+    display: inline-flex;
+    margin-top: 1.5em;
+    overflow: hidden;
+    height: 1.4em;
+}
+
+.text-rotator {
+    display: inline;
+    text-align: left;
+    animation: rotateText 8s infinite;
+}
+  
+@keyframes rotateText {
+    0%, 20% {
+        transform: translateY(0); /* stay */
+    }
+    20%, 33.33% {
+        transform: translateY(-21px); /* Move up */
+    }
+    33.33%, 53.33% {
+        transform: translateY(-21px); /* Stay */
+    }
+    53.33%, 66.66% {
+        transform: translateY(-42px); /* Move down */
+    }
+    66.66%, 86.66% {
+        transform: translateY(-42px); /* Stay */
+    }
+    86.66%, 100% {
+        transform: translateY(-63px);
+    }
+}
+/* Word carosel finish */
+
+
+
+#education {
+    margin-top: 12em;
+}
+
+#education h2 {
+    text-align: left;
+}
+
+#education div {
+    color: darkgray;
+    background-color: var(--light-blue);
+    border-radius: 40px;
+    margin-right: -20vw;
+    margin-top: 1em;
+    padding: 1em;
+}
+
+#martin-street h2,
+#woss h2 {
+    color: var(--blue-text);
+}
+
+
+#education div h2 {
+    text-align: center;
+}
+
+#martin-street {
+    width: 90%;
+}
+
+#woss {
+    margin-left: 55vw;
+    width: 40%;
 }
