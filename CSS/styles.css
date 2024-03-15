@@ -8,16 +8,16 @@
     --blue-text : #483d8b;
 }
 
-h1 {
-    font-family: "Comic Sans MS", cursive !important;
-}
-
 * {
     font-family: "Geneva", sans-serif;
-    
     user-select: none;
     padding: 0;
     margin: 0;
+}
+
+
+h1 {
+    font-family: "Comic Sans MS", cursive !important;
 }
 
 
@@ -76,8 +76,8 @@ main {
     margin-top: 10rem;
     text-align: center;
     color: var(--blue-text);
-    padding-left: 20vw;
-    padding-right: 20vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
 }
 
 main h1 {
@@ -156,11 +156,42 @@ main h1 {
 }
 
 #martin-street {
-    width: 90%;
+    width: 77%;
     margin-left: -10vw;
 }
 
 #woss {
-    margin-left: 45vw;
-    width: 40%;
+    width: 45%;
+    margin-left: calc(55vw - 10vw);
+}
+
+
+
+
+#in-progress {
+    display: flex;
+    flex-direction: column;
+} 
+
+#in-progress h2 {
+    text-align: left;
+}
+
+#in-progress div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#in-progress img {
+    margin-top: 1em;
+    position: relative;
+    width: 60vw;
+}
+
+#in-progress p {
+    width: 60vw;
+    margin-top: 1em;
 }
