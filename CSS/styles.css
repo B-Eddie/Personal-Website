@@ -156,10 +156,10 @@ main h1 {
             transform: translateY(-45%); /* Stay */
         }
         53.33%, 66.66% {
-            transform: translateY(-147%); /* Move down */
+            transform: translateY(-100%); /* Move down */
         }
         66.66%, 86.66% {
-            transform: translateY(-147%); /* Stay */
+            transform: translateY(-100%); /* Stay */
         }
         86.66%, 100% {
             transform: translateY(-140%); /* move */
