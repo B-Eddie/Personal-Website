@@ -165,9 +165,6 @@ main h1 {
             transform: translateY(-3em); /* move */
         }
     }
-    * {
-        display: none !important;
-    }
 }
 
 @media (min-width: 666px) {
