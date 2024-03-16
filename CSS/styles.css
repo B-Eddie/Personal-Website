@@ -60,7 +60,7 @@ header {
     display: flex;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 665px) {
     #navbar {
         display: flex;
         margin-top: 2rem !important;
@@ -83,7 +83,7 @@ header {
     }
 }
 
-@media (min-width: 601px) {
+@media (min-width: 666px) {
     #navbar {
         margin-top: 2rem !important;
         background-color: #d6e9ef;
