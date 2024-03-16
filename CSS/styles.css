@@ -167,28 +167,27 @@ main h1 {
     }
 }
 
-@media (min-width: 666px) {
-    @keyframes rotateText {
-        0%, 20% {
-            transform: translateY(0); /* stay */
-        }
-        20%, 33.33% {
-            transform: translateY(-89%); /* Move up */
-        }
-        33.33%, 53.33% {
-            transform: translateY(-89%); /* Stay */
-        }
-        53.33%, 66.66% {
-            transform: translateY(-187%); /* Move down */
-        }
-        66.66%, 86.66% {
-            transform: translateY(-187%); /* Stay */
-        }
-        86.66%, 100% {
-            transform: translateY(-279%); /* move */
-        }
+@keyframes rotateText {
+    0%, 20% {
+        transform: translateY(0); /* stay */
+    }
+    20%, 33.33% {
+        transform: translateY(-89%); /* Move up */
+    }
+    33.33%, 53.33% {
+        transform: translateY(-89%); /* Stay */
+    }
+    53.33%, 66.66% {
+        transform: translateY(-187%); /* Move down */
+    }
+    66.66%, 86.66% {
+        transform: translateY(-187%); /* Stay */
+    }
+    86.66%, 100% {
+        transform: translateY(-279%); /* move */
     }
 }
+
 
 /* Word carosel finish */
 
