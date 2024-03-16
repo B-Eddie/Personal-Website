@@ -162,7 +162,7 @@ main h1 {
             transform: translateY(-2em); /* Stay */
         }
         86.66%, 100% {
-            transform: translateY(-3em); /* move */
+            transform: translateY(-3em); /* Move */
         }
     }
 }
