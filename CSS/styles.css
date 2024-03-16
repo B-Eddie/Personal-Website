@@ -58,32 +58,61 @@ body {
 
 header {
     display: flex;
-    flex-direction: row;
-    flex-shrink: 1;
-    margin-top: 2rem !important;
-    background-color: #d6e9ef;
-    border-radius: 20px;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    padding-left: 3px;
-    width: 42rem;
-    text-align: center;
-    align-items: center;
-    margin: auto;
 }
+
+@media (max-width: 600px) {
+    #navbar {
+        display: flex;
+        margin-top: 2rem !important;
+        background-color: #d6e9ef;
+        border-radius: 20px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        padding-left: 3px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #navbar a {
+        display: flex;
+        border-radius: 20px;
+        color: var(--dark-gray) !important;
+        text-decoration: none !important;
+        padding: 7px;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 601px) {
+    #navbar {
+        margin-top: 2rem !important;
+        background-color: #d6e9ef;
+        border-radius: 20px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        padding-left: 3px;
+        width: 42rem;
+        text-align: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    #navbar a {
+        border-radius: 20px;
+        color: var(--dark-gray) !important;
+        text-decoration: none !important;
+        padding: 7px;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
 
 .highlighted {
     background-color: #e6f1f4;
 }
 
-header a {
-    border-radius: 20px;
-    color: var(--dark-gray) !important;
-    text-decoration: none !important;
-    padding: 7px;
-    padding-left: 2em;
-    padding-right: 2em;
-}
+
 
 main {
     margin-top: 10rem;
@@ -186,7 +215,7 @@ main h1 {
 
 @media (max-width: 600px) {
     #martin-street {
-        width: 100vw !important;
+        width: 100% !important;
         position: relative;
         left: 0 !important;
         right: 0 !important;
