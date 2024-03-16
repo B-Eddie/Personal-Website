@@ -144,7 +144,7 @@ main h1 {
     animation: rotateText 8s infinite;
 }
 
-@media only screen and (max-width: 665px) {
+@media (max-width: 665px) {
     @keyframes rotateText {
         0%, 20% {
             transform: translateY(0); /* stay */
@@ -164,6 +164,9 @@ main h1 {
         86.66%, 100% {
             transform: translateY(-3em); /* move */
         }
+    }
+    * {
+        opacity: 0;
     }
 }
 
