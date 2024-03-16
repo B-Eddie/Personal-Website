@@ -133,64 +133,50 @@ main h1 {
 /* Word carosel */
 #text-carousel {
     font-size: 2em !important;
-    display: inline-flex;
-    overflow: hidden;
-    height: 1.4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .text-rotator {
     display: inline;
     text-align: left;
-    animation: rotateText 8s infinite;
+    position: relative;
+    width: 136.9px;
 }
 
-@media (max-width: 665px) {
-    @keyframes rotateText {
-        0%, 20% {
-            transform: translateY(0); /* Stay */
-        }
-        20%, 33.33% {
-            transform: translateY(calc(-1.2 * 1em - 0.5em)); /* Move up by the height of one word */
-        }
-        33.33%, 53.33% {
-            transform: translateY(calc(-1.2 * 1em - 0.5em)); /* Stay */
-        }
-        53.33%, 66.66% {
-            transform: translateY(calc(-2.2 * 1em - 1em)); /* Move down by the height of one word */
-        }
-        66.66%, 86.66% {
-            transform: translateY(calc(-2.2 * 1em - 1em)); /* Stay */
-        }
-        86.66%, 100% {
-            transform: translateY(calc(-3.2 * 1em - 1.5em)); /* Move down by the height of one word */
-        }
+.text-rotator p {
+    position: absolute;
+    opacity: 0;
+    animation: rotateText 10s infinite;
+    transition: opacity 1s;
+}
+
+#tr1 {
+    animation-delay: 0s;
+    opacity: 1;
+}
+
+#tr2 {
+    animation-delay: 3.33s; /* Adjust the delay based on your animation duration */
+}
+
+#tr3 {
+    animation-delay: 6.66s; /* Adjust the delay based on your animation duration */
+}
+
+@keyframes rotateText {
+    0%, 33.33% {
+        opacity: 0;
+    }
+    33.33%, 66.66% {
+        opacity: 1;
+    }
+    66.66%, 100% {
+        opacity: 0;
     }
 }
-
-@media (min-width: 665px) {
-    @keyframes rotateText {
-        0%, 20% {
-            transform: translateY(0); /* stay */
-        }
-        20%, 33.33% {
-            transform: translateY(-89%); /* Move up */
-        }
-        33.33%, 53.33% {
-            transform: translateY(-89%); /* Stay */
-        }
-        53.33%, 66.66% {
-            transform: translateY(-187%); /* Move down */
-        }
-        66.66%, 86.66% {
-            transform: translateY(-187%); /* Stay */
-        }
-        86.66%, 100% {
-            transform: translateY(-279%); /* move */
-        }
-    }
-}
-
-
 /* Word carosel finish */
 
 
