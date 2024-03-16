@@ -15,11 +15,21 @@
     margin: 0;
 }
 
+p {
+    font-size: clamp(1rem, .8852rem + .4898vw, 1.375rem);
+}
+
+#text-carousel p {
+    font-size: 1em;
+}
 
 h1 {
     font-family: "Comic Sans MS", cursive !important;
 }
 
+h2 {
+    font-family: avenir;
+}
 
 @media (prefers-reduced-motion: no-preference) {
     .animate {
@@ -91,7 +101,7 @@ main h1 {
 
 /* Word carosel */
 #text-carousel {
-    font-size: 2em;
+    font-size: 2em !important;
     display: inline-flex;
     overflow: hidden;
     height: 1.4em;
@@ -204,10 +214,20 @@ main h1 {
 #in-progress img {
     margin-top: 1em;
     position: relative;
-    width: 60vw;
+    width: 70vw;
 }
 
 #in-progress p {
-    width: 60vw;
+    width: 70vw;
     margin-top: 1em;
 }
+
+
+
+
+
+/* footer */
+footer {
+    margin-top: 3em;
+}
+/* footer end */
