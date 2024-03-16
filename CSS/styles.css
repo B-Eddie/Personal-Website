@@ -144,25 +144,25 @@ main h1 {
     animation: rotateText 8s infinite;
 }
 
-@media (max-width: 665px) {
+@media only screen and (max-width: 665px) {
     @keyframes rotateText {
         0%, 20% {
             transform: translateY(0); /* stay */
         }
         20%, 33.33% {
-            transform: translateY(-1.3em); /* Move up */
+            transform: translateY(-1em); /* Move up */
         }
         33.33%, 53.33% {
-            transform: translateY(-1.3em); /* Stay */
+            transform: translateY(-1em); /* Stay */
         }
         53.33%, 66.66% {
-            transform: translateY(-2.6em); /* Move down */
+            transform: translateY(-2em); /* Move down */
         }
         66.66%, 86.66% {
-            transform: translateY(-2.6em); /* Stay */
+            transform: translateY(-2em); /* Stay */
         }
         86.66%, 100% {
-            transform: translateY(-4em); /* move */
+            transform: translateY(-3em); /* move */
         }
     }
 }
