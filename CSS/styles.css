@@ -70,7 +70,7 @@ header {
         padding-top: 15px;
         padding-left: 3px;
         width: 100%;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     #navbar a {
@@ -79,7 +79,6 @@ header {
         color: var(--dark-gray) !important;
         text-decoration: none !important;
         padding: 7px;
-        justify-content: space-between;
     }
 }
 
@@ -200,6 +199,18 @@ main h1 {
 }
 
 @media (max-width: 665px) {
+    #education {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    #education div {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     #martin-street {
         padding-top: 26px !important;
         padding-bottom: 26px !important;
@@ -218,7 +229,7 @@ main h1 {
     }
 }
 
-@media (max-width: 665px) {
+@media (min-width: 665px) {
     #martin-street {
         padding-top: 26px !important;
         padding-bottom: 26px !important;
@@ -247,6 +258,7 @@ main h1 {
 
 
 #in-progress {
+    margin-top: 2em;
     display: flex;
     flex-direction: column;
 } 
