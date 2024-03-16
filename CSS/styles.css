@@ -83,7 +83,7 @@ main {
 main h1 {
     text-align: center;
     display: inline-block;
-    font-size: 13vh;
+    font-size: 7vw;
 
 }
 
@@ -151,18 +151,34 @@ main h1 {
 }
 
 
-#education div h2 {
+#education div h3 {
     text-align: center;
+    font-size: 1.5em;
+    color: var(--blue-text);
 }
 
 #martin-street {
+    padding-top: 26px !important;
+    padding-bottom: 26px !important;
     width: 77%;
     margin-left: -10vw;
 }
 
 #woss {
+    padding-top: 26px !important;
+    padding-bottom: 26px !important;
     width: 45%;
     margin-left: calc(55vw - 10vw);
+    box-shadow: ;
+}
+
+@media (max-width: 600px) {
+    #martin-street {
+        width: 100vw !important;
+        position: relative;
+        left: 0 !important;
+        right: 0 !important;
+    }
 }
 
 
