@@ -207,8 +207,9 @@ main h1 {
     }
 
     #education div {
-        margin-left: 0;
-        margin-right: 0;
+        position: relative !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
 
     #martin-street {
