@@ -24,7 +24,7 @@ p {
 }
 
 h1 {
-    font-family: "Comic Sans MS", cursive !important;
+    font-family: "Comic Sans MS", Chalkboard, cursive !important;
 }
 
 h2 {
@@ -179,7 +179,6 @@ main h1 {
     padding-bottom: 26px !important;
     width: 45%;
     margin-left: calc(55vw - 10vw);
-    box-shadow: ;
 }
 
 @media (max-width: 600px) {
@@ -228,6 +227,29 @@ main h1 {
 
 /* footer */
 footer {
+    padding-top: 13em;
+}
+
+#contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+#contacts i {
+    font-size: 3em;
+    padding-left: .2em;
+    padding-right: .2em;
+    transition: transform .2s;
+}
+
+#contacts i:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#copywrite {
     margin-top: 3em;
 }
 /* footer end */
