@@ -147,22 +147,22 @@ main h1 {
 @media (max-width: 665px) {
     @keyframes rotateText {
         0%, 20% {
-            transform: translateY(0); /* stay */
+            transform: translateY(0); /* Stay */
         }
         20%, 33.33% {
-            transform: translateY(-1em); /* Move up */
+            transform: translateY(calc(-1.2 * 1em - 0.5em)); /* Move up by the height of one word */
         }
         33.33%, 53.33% {
-            transform: translateY(-1em); /* Stay */
+            transform: translateY(calc(-1.2 * 1em - 0.5em)); /* Stay */
         }
         53.33%, 66.66% {
-            transform: translateY(-2em); /* Move down */
+            transform: translateY(calc(-2.2 * 1em - 1em)); /* Move down by the height of one word */
         }
         66.66%, 86.66% {
-            transform: translateY(-2em); /* Stay */
+            transform: translateY(calc(-2.2 * 1em - 1em)); /* Stay */
         }
         86.66%, 100% {
-            transform: translateY(-3em); /* Move */
+            transform: translateY(calc(-3.2 * 1em - 1.5em)); /* Move down by the height of one word */
         }
     }
 }
