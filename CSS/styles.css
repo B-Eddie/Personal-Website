@@ -57,6 +57,9 @@ body {
 }
 
 header {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
     margin-top: 2rem !important;
     background-color: #d6e9ef;
     border-radius: 20px;
@@ -118,19 +121,19 @@ main h1 {
         transform: translateY(0); /* stay */
     }
     20%, 33.33% {
-        transform: translateY(-41px); /* Move up */
+        transform: translateY(-89%); /* Move up */
     }
     33.33%, 53.33% {
-        transform: translateY(-41px); /* Stay */
+        transform: translateY(-89%); /* Stay */
     }
     53.33%, 66.66% {
-        transform: translateY(-85px); /* Move down */
+        transform: translateY(-187%); /* Move down */
     }
     66.66%, 86.66% {
-        transform: translateY(-85px); /* Stay */
+        transform: translateY(-187%); /* Stay */
     }
     86.66%, 100% {
-        transform: translateY(-127px); /* move */
+        transform: translateY(-279%); /* move */
     }
 }
 /* Word carosel finish */
@@ -241,6 +244,7 @@ footer {
     font-size: 3em;
     padding-left: .2em;
     padding-right: .2em;
+    color: var(--blue-text) !important;
     transition: transform .2s;
 }
 
