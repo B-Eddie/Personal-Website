@@ -199,18 +199,39 @@ main h1 {
     color: var(--blue-text);
 }
 
-#martin-street {
-    padding-top: 26px !important;
-    padding-bottom: 26px !important;
-    width: 77%;
-    margin-left: -10vw;
+@media (max-width: 665px) {
+    #martin-street {
+        padding-top: 26px !important;
+        padding-bottom: 26px !important;
+        width: 100%;
+        margin-left: -10vw;
+        left: 0;
+        right: 0;
+    }
+    
+    #woss {
+        padding-top: 26px !important;
+        padding-bottom: 26px !important;
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
 }
 
-#woss {
-    padding-top: 26px !important;
-    padding-bottom: 26px !important;
-    width: 45%;
-    margin-left: calc(55vw - 10vw);
+@media (max-width: 665px) {
+    #martin-street {
+        padding-top: 26px !important;
+        padding-bottom: 26px !important;
+        width: 77%;
+        margin-left: -10vw;
+    }
+
+    #woss {
+        padding-top: 26px !important;
+        padding-bottom: 26px !important;
+        width: 45%;
+        margin-left: calc(55vw - 10vw);
+    }
 }
 
 @media (max-width: 600px) {
