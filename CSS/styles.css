@@ -150,19 +150,19 @@ main h1 {
             transform: translateY(0); /* stay */
         }
         20%, 33.33% {
-            transform: translateY(-45%); /* Move up */
+            transform: translateY(-92%); /* Move up */
         }
         33.33%, 53.33% {
-            transform: translateY(-45%); /* Stay */
+            transform: translateY(-92%); /* Stay */
         }
         53.33%, 66.66% {
-            transform: translateY(-100%); /* Move down */
+            transform: translateY(-185%); /* Move down */
         }
         66.66%, 86.66% {
-            transform: translateY(-100%); /* Stay */
+            transform: translateY(-185%); /* Stay */
         }
         86.66%, 100% {
-            transform: translateY(-140%); /* move */
+            transform: translateY(-280%); /* move */
         }
     }
 }
