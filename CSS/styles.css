@@ -68,7 +68,8 @@ header {
         border-radius: 20px;
         padding-bottom: 15px;
         padding-top: 15px;
-        padding-left: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
         width: 100%;
         justify-content: space-evenly;
     }
@@ -89,8 +90,9 @@ header {
         border-radius: 20px;
         padding-bottom: 15px;
         padding-top: 15px;
-        padding-left: 3px;
-        width: 42rem;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: auto + 1em;
         text-align: center;
         align-items: center;
         margin: auto;
