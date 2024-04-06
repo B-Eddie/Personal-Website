@@ -1,5 +1,5 @@
 :root {
-    --light-blue : #BBE2EC;
+    --light-blue : #cbf1ff;
     --dark-blue : #40A2E3;
     --tan : #FFF6E9;
     --green : #0D9276;
@@ -58,7 +58,7 @@ h2 {
 }
 
 body {
-    background: linear-gradient(to bottom right, #f5f5dc, #e6e6fa);
+    background: linear-gradient(to bottom right, #7edaec, #efeceb);
 }
 
 header {
@@ -71,7 +71,7 @@ header {
     }
 
     h1 {
-        font-size: 10vw !important;
+        font-size: 18vw !important;
     }
 }
 
@@ -91,13 +91,73 @@ main h1 {
 }
 
 
-.languages {
+#languages {
     margin-top: 12em;    
 }
 
 
-.languages a {
-    color: #000;
-    height: 1vw;
+#languages a {
+    color: var(--dark-blue);
 }
 
+#languages-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.language-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.language-name h3 {
+    margin-left: 1em;
+}
+
+
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.progress {
+    width: 20em;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bar {
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.novice {
+    width: 33.33%;
+    background-color: #ff6b6b;
+    left: 0;
+}
+
+.intermediate {
+    width: 33.33%;
+    background-color: #f3ba2c;
+    left: 33.33%;
+}
+
+.advanced {
+    width: 33.33%;
+    /* Change this value based on your proficiency */
+    background-color: #4cd137;
+    left: 66.66%;
+}

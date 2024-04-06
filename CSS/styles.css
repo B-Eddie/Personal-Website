@@ -53,7 +53,7 @@ h2 {
 }
 
 body {
-    background: linear-gradient(to bottom right, #f5f5dc, #e6e6fa);
+    background: linear-gradient(to bottom right, #7edaec, #efeceb);
 }
 
 @media (max-width: 665px) {
@@ -144,7 +144,7 @@ main h1 {
 
 #education div {
     color: darkgray;
-    background-color: var(--light-blue);
+    background-color: rgba(255, 255, 255, 0.35);
     border-radius: 40px;
     margin-right: -20vw;
     margin-top: 1em;
