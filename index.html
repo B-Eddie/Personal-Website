@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="../CSS/header.css">
         <link rel="stylesheet" href="../CSS/footer.css">
         <script src="../Javascript/script.js"></script>
+        <script src="../Javascript/header.js"></script>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -15,11 +16,12 @@
     <body>
         <header>
             <div id="navbar">
-                <a id="home" class="highlighted" href="./index">Home</a> <!--about me-->
+                <a id="home" class="highlighted" href="./">Home</a> <!--about me-->
                 <a id="portfolio" href="./portfolio">Portfolio</a>
                 <a id="skills" href="skills">Skills</a>
                 <a id="achievements" href="achievements">Achievements</a>
-                <a id="contact" href="contact">Contact</a>
+                <a id="contact" href="./contact.html" onclick="i()">Contact</a>
+                <div id="backgroundSlide"></div> 
             </div>
         </header>
         <main>
@@ -39,7 +41,7 @@
             <p>I'm a 15-year-old passionate about Coding, Business, Science, and Math.</p>
 
             <div id="education">
-                <h2 style="font-size: 3em;">Education</h2>
+                <h2 style="font-size: 3em;" class="animate">Education</h2>
                 <div id="martin-street" class="animate">
                     <h3>Martin Street PS</h3>
                     <p>Gr. 2-8</p>

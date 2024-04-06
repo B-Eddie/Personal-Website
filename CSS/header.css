@@ -49,5 +49,18 @@ header {
 
 
 .highlighted {
+    background-color: transparent;
+}
+
+
+#backgroundSlide {
+    position: absolute;
+    margin-top: -1.7em;
+    width: auto;
+    height: 2em;
     background-color: #e6f1f4;
+    z-index: -1;
+    transition: width 0.3s ease, left 0.3s ease;
+    border-radius: 20px; /* Apply the same border-radius as the .highlighted link */
+    pointer-events: none;
 }

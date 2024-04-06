@@ -61,30 +61,16 @@ body {
     background: linear-gradient(to bottom right, #7edaec, #efeceb);
 }
 
-header {
-    display: flex;
-}
 
 @media (max-width: 665px) {
     h2 {
         text-align: center !important;
     }
 
-    #languages-container {
-        flex-wrap: wrap;
-        align-content: center;
-    }
-
-    .language-element {
-        margin-left: -1em !important;
-        margin-top: 3em;
-    }
-
     h1 {
-        font-size: 18vw !important;
+        font-size: 12vw !important;
     }
 }
-
 
 main {
     margin-top: 10rem;
@@ -101,80 +87,34 @@ main h1 {
 }
 
 
-#languages {
-    margin-top: 12em;    
-}
-
-
-#languages a {
-    color: var(--dark-blue);
-}
-
-#languages-container {
+.contacts {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: start;
-    margin-top: 1em;
+    overflow-wrap: break-word;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
-.language-element {
-    margin-left: 1em;
-    margin-top: 3em;
+.contact-container {
+    margin-top: 7em;
+    padding: 0.3em;
+    width: 15vw;
+    min-width: 120px;
 }
 
-.language-name {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.contact-container i {
+    font-size: 5em;
 }
 
-.language-name h3 {
-    margin-left: 1em;
+.a-p {
+    margin-top: 20px;
+    margin-bottom: 4px;
+    text-decoration: none;
+    color: var(--blue-text) !important;
 }
 
-/* skillbar */
-.skill {
-    margin-bottom: 20px;
+.contact-container p {
+    text-decoration: none;
+    color: var(--dark-blue);
 }
-
-.progress {
-    width: 20em;
-    height: 20px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    position: relative;
-}
-
-.bar {
-    height: 100%;
-    border-radius: 10px;
-    position: absolute;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 12px;
-    font-weight: bold;
-    white-space: nowrap;
-}
-.novice {
-    width: 33.33%;
-    background-color: #ff6b6b;
-    left: 0;
-}
-
-.intermediate {
-    width: 33.33%;
-    background-color: #f3ba2c;
-    left: 33.33%;
-}
-
-.advanced {
-    width: 33.33%;
-    background-color: #4cd137;
-    left: 66.66%;
-}
-
-/* skillbar */
