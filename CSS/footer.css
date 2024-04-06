@@ -1,0 +1,27 @@
+footer {
+    padding-top: 13em;
+}
+
+#contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+#contacts i {
+    font-size: 3em;
+    padding-left: .2em;
+    padding-right: .2em;
+    color: var(--blue-text) !important;
+    transition: transform .2s;
+}
+
+#contacts i:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#copywrite {
+    margin-top: 3em;
+}
