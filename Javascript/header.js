@@ -3,24 +3,23 @@ document.addEventListener("DOMContentLoaded", function() {
     const backgroundSlide = document.getElementById("backgroundSlide");
     let highlightedLink = document.querySelector("#navbar .highlighted");
 
-    // Initialize width and left position based on the initially highlighted link
-    const linkWidth = highlightedLink.offsetWidth;
-    const linkLeft = highlightedLink.offsetLeft;
-    backgroundSlide.style.width = `${linkWidth}px`;
-    backgroundSlide.style.left = `${linkLeft}px`;
+    // Function to calculate the position of the highlighted navbar
+    function calculatePosition(link) {
+        const linkWidth = link.offsetWidth;
+        const linkLeft = link.offsetLeft + (link.offsetWidth / 2);
+        backgroundSlide.style.width = `${linkWidth}px`;
+        backgroundSlide.style.left = `${linkLeft}px`;
+    }
+
+    // Initialize position based on the initially highlighted link
+    calculatePosition(highlightedLink);
 
     navbarLinks.forEach(link => {
         link.addEventListener("click", function(e) {
             e.preventDefault(); // Prevent default link behavior
 
             // Slide the background to the clicked link
-            const linkWidth = link.offsetWidth;
-            const linkLeft = link.offsetLeft;
-            backgroundSlide.style.width = `${linkWidth}px`;
-
-            // Smoothly transition the background position
-            backgroundSlide.style.transition = "left 0.05s ease";
-            backgroundSlide.style.left = `${linkLeft}px`;
+            calculatePosition(link);
 
             // Remove the 'highlighted' class from all links
             navbarLinks.forEach(link => {
@@ -36,11 +35,12 @@ document.addEventListener("DOMContentLoaded", function() {
             // Simulate link navigation after animation (optional)
             setTimeout(() => {
                 window.location.href = link.href;
-            }, 200); // Adjust the timeout duration as needed to match the animation duration
-
-            // Reset transition property after animation
-
-            backgroundSlide.style.transition = "";
+            }, 300); // Adjust the timeout duration as needed to match the animation duration
         });
+    });
+
+    // Recalculate position on window resize
+    window.addEventListener("resize", function() {
+        calculatePosition(highlightedLink);
     });
 });
