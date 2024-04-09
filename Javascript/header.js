@@ -6,10 +6,14 @@ document.addEventListener("DOMContentLoaded", function() {
     // Function to calculate the position of the highlighted navbar
     function calculatePosition(link) {
         const linkWidth = link.offsetWidth;
-        const linkLeft = link.offsetLeft + (link.offsetWidth / 2);
+        const linkLeft = link.offsetLeft;
+        const linkTop = link.offsetTop + link.offsetHeight - backgroundSlide.offsetHeight; // Adjust vertical position
         backgroundSlide.style.width = `${linkWidth}px`;
         backgroundSlide.style.left = `${linkLeft}px`;
+        backgroundSlide.style.top = `${linkTop}px`; // Apply the adjusted vertical position
     }
+    
+    
 
     // Initialize position based on the initially highlighted link
     calculatePosition(highlightedLink);
