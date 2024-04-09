@@ -21,26 +21,23 @@ document.addEventListener("DOMContentLoaded", function() {
     navbarLinks.forEach(link => {
         link.addEventListener("click", function(e) {
             e.preventDefault(); // Prevent default link behavior
-
+        
             // Slide the background to the clicked link
             calculatePosition(link);
-
+        
             // Remove the 'highlighted' class from all links
             navbarLinks.forEach(link => {
                 link.classList.remove("highlighted");
             });
-
+        
             // Add the 'highlighted' class to the clicked link
             link.classList.add("highlighted");
-
-            // Update highlightedLink to the clicked link
-            highlightedLink = link;
-
+        
             // Simulate link navigation after animation (optional)
             setTimeout(() => {
                 window.location.href = link.href;
             }, 300); // Adjust the timeout duration as needed to match the animation duration
-        });
+        });        
     });
 
     // Recalculate position on window resize
