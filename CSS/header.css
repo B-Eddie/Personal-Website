@@ -3,7 +3,6 @@ header {
 }
 
 #navbar {
-    /* background-color: #d6e9ef; */
     background-color: rgba(255, 255, 255, 0.35);
     margin-top: 2rem !important;
     border-radius: 20px;
@@ -13,7 +12,8 @@ header {
     padding-right: 10px;
 }
 
-#navbar a {
+#navbar a, 
+#portfolio {
     border-radius: 20px;
     color: var(--dark-gray) !important;
     text-decoration: none !important;
@@ -27,7 +27,8 @@ header {
         justify-content: space-evenly;
     }
 
-    #navbar a {
+    #navbar a, 
+    #portfolio {
         font-size: 3.5vw;
         display: flex;
     }
@@ -41,7 +42,8 @@ header {
         margin: auto;
     }
 
-    #navbar a {
+    #navbar a, 
+    #portfolio {
         padding-left: 2em;
         padding-right: 2em;
     }
@@ -55,7 +57,6 @@ header {
 
 #backgroundSlide {
     position: absolute;
-    /* margin-top: -1.7em; */
     width: auto;
     height: 2em;
     background-color: #e6f1f4;
@@ -63,4 +64,39 @@ header {
     transition: width 0.3s ease, left 0.3s ease;
     border-radius: 20px; /* Apply the same border-radius as the .highlighted link */
     pointer-events: none;
+}
+#portfolio-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#portfolio-content {
+    display: none;
+    position: absolute;
+    left: 50%;
+    margin-top: .8em;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 1em;
+    background-color: rgba(175, 230, 239);
+}
+
+#portfolio-dropdown:hover #portfolio-content,
+#portfolio-content:hover {
+    display: block;
+}
+
+#portfolio-content a:hover {
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+#dropdown-bar {
+    position: absolute;
+    color: black;
+    width: 100%; /* Make it full width */
+    height: 70%; /* Adjust the height */
+    cursor: default; /* Prevent cursor from changing */
+    background: transparent; /* Make it invisible */
 }
