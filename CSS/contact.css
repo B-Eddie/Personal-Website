@@ -118,3 +118,8 @@ main h1 {
     text-decoration: none;
     color: var(--dark-blue);
 }
+
+footer {
+    padding-bottom: 1em;
+    margin-top: 25%;
+}

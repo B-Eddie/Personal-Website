@@ -113,6 +113,8 @@ main h1 {
 #languages-container {
     display: flex;
     flex-direction: row;
+    row-gap: 3em;
+    column-gap: 1em;
     flex-wrap: wrap;
     align-items: start;
     margin-top: 1em;
