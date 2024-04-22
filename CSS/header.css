@@ -70,6 +70,10 @@ header {
     display: inline-block;
 }
 
+#portfolio-dropdown a i {
+    top: 50%;
+}
+
 #portfolio-content {
     display: none;
     position: absolute;
