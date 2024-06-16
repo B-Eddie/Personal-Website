@@ -110,7 +110,7 @@ main h1 {
 .a-p {
     margin-top: 20px;
     margin-bottom: 4px;
-    text-decoration: none;
+    text-decoration: underline;
     color: var(--blue-text) !important;
 }
 
